@@ -1,0 +1,232 @@
+:root {
+    --main-color: #03A9F5;
+    --secondary-color: #EA1E63;
+    --grey-color: #D2D2D2;
+    --light-color: #FFF;
+    --dark-color: #111;
+}
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+.hero {
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-color);
+}
+    .hero > .container {
+        display: inline-block;
+        text-align: center;
+        width: 800px;
+        margin: 200px calc(( 100% - 800px ) / 2);
+        }
+        .hero > .container > h1 {
+            font-size: 80px;
+            margin: 60px 0 30px;
+        }
+        .hero > .container > p {
+            color: var(--grey-color);
+        }
+        .hero > .container > .clock {
+            display: inline-block;
+            width: 100%;
+            margin: 100px 0;
+            color: var(--light-color);
+        }
+            .clock > .col {
+                display: inline-block;
+                width: 25%;
+                float: left;
+            }
+                .clock > .col > .value {
+                    font-size: 80px;
+                }
+                .clock > .col > .title {
+                    font-size: 18px;
+                }
+        .hero > .container > form {
+            display: inline-block;
+            width: 100%;
+        }
+            .hero > .container > form > input {
+                outline: none;
+                border: none;
+                border-bottom: 1px solid var(--grey-color);
+                background: transparent;
+                width: 100%;
+                font-size: 20px;
+                line-height: 40px;
+                color: var(--light-color);
+            }
+                .hero > .container > form > .first-input::placeholder {
+                    color: var(--light-color);
+                }
+            .hero > .container > form > .btn {
+                display: inline-block;
+                background: var(--secondary-color);
+                color: white;
+                padding: 20px 40px;
+                margin-top: 60px;
+            }
+        .hero > .container > .mouse {
+
+        }
+.content {
+    display: inline-block;
+    width: 100%;
+    height: 600px;
+}
+    .content > .container {
+        display: inline-block;
+        width: 1200px;
+        margin: 60px calc( (100% - 1200px) / 2 );
+    }
+        .content > .container > .left {
+            display: inline-block;
+            width: 50%;
+            float: left;
+        }
+            .left > h2 {
+                font-size: 40px;
+            }
+            .left > p {
+                margin: 30px 0;
+            }
+            .left > p > a {
+                color: var(--secondary-color);
+            }
+                .container > .left > .progress-bar {
+                    display: inline-block;
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                    .left > .progress-bar > .texts {
+                        display: inline-block;
+                        width: 100%;
+                        margin-bottom: 10px;
+                        font-size: 18px;
+                        line-height: 20px;
+                        color: var(--dark-color);
+                    }
+                        .progress-bar > .texts > .title {
+                            display: inline-block;
+                            float: left;
+                        }
+                        .progress-bar > .texts > .value {
+                            display: inline-block;
+                            float: right;
+                        }
+                    .progress-bar > .bar {
+                        display: inline-block;
+                        width: 100%;
+                        height: 4px;
+                        background-color: var(--grey-color);
+                    }
+                        .progress-bar > .bar > .bar-value {
+                            display: inline-block;
+                            width: 90%;
+                            height: 100%;
+                            background-color: var(--main-color);
+                        } 
+        .content > .container > .right {
+            display: inline-block;
+            width: 40%;
+            float: left;
+            margin-left: 10%;
+        }
+            .right > h2 {
+                font-size: 40px;
+            }
+            .right > p {
+                margin: 30px 0;
+            }
+            .right > p > a {
+                color: var(--secondary-color);
+            }
+            .right > form {
+                
+                width: 100%;
+            }
+                .right > form > input {
+                    display: inline-block;
+                    outline: none; 
+                    border: none;
+                    border-bottom: 1px solid var(--grey-color);
+                    width: 237px;
+                    font-size: 15px;
+                    line-height: 40px;
+                }
+                .right > form > textarea {
+                    margin-top: 50px;
+                    display: inline-block;
+                    width: 480px;
+                    height: 80px;
+                    font-size: 15px;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid var(--grey-color);
+                }
+                .right > form > .btn {
+                    display: inline-block;
+                    background: var(--secondary-color);
+                    color: white;
+                    padding: 20px 40px;
+                    margin-top: 60px;
+                    float: right;
+                }
+footer {
+    background: var(--main-color);
+    width: 100%;
+    display: inline-block;
+}
+    footer > .footer {
+        display: inline-block;
+        width: 800px;
+        margin: 1px calc(( 100% - 800px ) / 2);
+        text-align: center;
+        height: 500px;
+    }
+        footer > .footer > header {
+            display: inline-block;
+            width: 100%;
+            margin: 50px 0;
+            color: var(--light-color);
+        }
+            .footer > header > .social-icons {
+                display: inline-block;
+                float: left;
+                width: 14.2%;
+                transform: scale(0.7, 0.7);
+            }
+        footer > .footer > .logo2 {
+            display: inline-block;
+            width: 100%;
+            margin: 50px 0;
+        }
+            footer > .footer > .logo2 > img {
+                height: 50px;
+            }   
+        footer > .footer > .first-footer-paragraph {
+            display: inline-block;
+            float: left;
+            width: 33.3%;
+        }
+            .footer > .first-footer-paragraph > p {
+                color: var(--light-color);
+            }
+                .footer > .first-footer-paragraph > p > a {
+                    text-decoration: none;
+                    color: var(--light-color);
+                }
+        footer > .footer > p {
+            color: var(--light-color);
+        }
+            footer > .footer > p > a {
+                text-decoration: none;
+                color: var(--light-color);
+            }
