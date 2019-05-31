@@ -5,6 +5,9 @@
     --light-color: #FFF;
     --dark-color: #111;
 }
+html {
+    scroll-behavior: smooth;
+}
 body,
 body * {
     margin: 0;
@@ -79,7 +82,6 @@ body * {
 .content {
     display: inline-block;
     width: 100%;
-    height: 600px;
 }
     .content > .container {
         display: inline-block;
@@ -183,50 +185,97 @@ footer {
     background: var(--main-color);
     width: 100%;
     display: inline-block;
+    color: var(--light-color);
+    text-align: center;
 }
-    footer > .footer {
+    footer > .container {
         display: inline-block;
         width: 800px;
-        margin: 1px calc(( 100% - 800px ) / 2);
-        text-align: center;
-        height: 500px;
+        margin: 0px calc(( 100% - 800px ) / 2);
+        position: relative;
     }
-        footer > .footer > header {
-            display: inline-block;
-            width: 100%;
-            margin: 50px 0;
-            color: var(--light-color);
-        }
-            .footer > header > .social-icons {
+            .container > .social-icons {
                 display: inline-block;
-                float: left;
-                width: 14.2%;
-                transform: scale(0.7, 0.7);
+                width: 100%;
+                padding: 20px 0;
+                border-bottom: 1px solid #fff;
             }
-        footer > .footer > .logo2 {
+                footer > .container > .social-icons > a {
+                    display: inline-block;
+                    margin: 10px 20px;
+                    color: var(--light-color);
+                    text-decoration: none;
+                    font-size: 30px;
+                }
+        footer > .container > .logo2 {
             display: inline-block;
             width: 100%;
             margin: 50px 0;
         }
-            footer > .footer > .logo2 > img {
+            footer > .container > .logo2 > img {
                 height: 50px;
             }   
-        footer > .footer > .first-footer-paragraph {
+        .container > .first-footer-paragraph {
             display: inline-block;
-            float: left;
-            width: 33.3%;
+            width: 100%;
+            color: var(--light-color);
+        }  
+        footer > .container > .first-footer-paragraph > .section {
+            display: inline-block;
+        
+            width: 32%;
         }
-            .footer > .first-footer-paragraph > p {
+        footer > .container > .first-footer-paragraph > .span {
+            display: inline-block;
+            
+        }
+            .container > .first-footer-paragraph > .section > p {
                 color: var(--light-color);
             }
-                .footer > .first-footer-paragraph > p > a {
-                    text-decoration: none;
+                .container > .first-footer-paragraph > .section > p > a {
                     color: var(--light-color);
                 }
-        footer > .footer > p {
+        footer > .container > p {
             color: var(--light-color);
+            padding: 10px 0;
+            line-height: 24px;
+            padding-bottom: 60px;
         }
-            footer > .footer > p > a {
-                text-decoration: none;
+            footer > .container > p > a {
                 color: var(--light-color);
             }
+            footer > .container > .fa-angle-up {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                line-height: 59px;
+                font-size: 60px;
+                background: var(--secondary-color);
+                color: var(--light-color);
+                text-decoration: none;
+                position: absolute;
+                top: -42px;
+                right: -217px;
+            }    
+@media ( max-width: 1400px ) {
+    .content > .container {
+        width: 100%;
+        margin: 0;
+        padding: 40px;
+    }
+    .content > .container > .left {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+    .content > .container > .right {
+        width: 100%;
+        margin-left: 0;
+    }
+    footer > .container {
+        width: 100%;
+        margin: 0;
+    }
+        footer .fa-angle-up {
+            display: none;
+        }
+} 
