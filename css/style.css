@@ -166,12 +166,14 @@ body * {
                 .right > form > textarea {
                     margin-top: 50px;
                     display: inline-block;
-                    width: 480px;
-                    height: 80px;
                     font-size: 15px;
                     border: none;
                     outline: none;
                     border-bottom: 1px solid var(--grey-color);
+                    resize: vertical;
+                    min-height: 80px;
+                    max-height: 200px;
+                    max-width: 478px;
                 }
                 .right > form > .btn {
                     display: inline-block;
@@ -278,4 +280,20 @@ footer {
         footer .fa-angle-up {
             display: none;
         }
+        footer > .container {
+            padding: 0 40px;
+        }
+        .container > .right > form > input {
+            width: 100%;
+        } 
 } 
+@media ( max-width: 900px) {
+    .hero > .container {
+        width: 100%;
+        margin: 40px 0;
+        padding: 0 40px;
+    }
+    .clock > .col {
+        width: 50%;
+    }
+}
